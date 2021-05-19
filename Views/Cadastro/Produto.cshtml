@@ -156,7 +156,7 @@
             var btn = $(this),
                 tr = btn.closest('tr'),
                 id = tr.attr('data-id'),
-                url = '@Url.Action("ExcluirGrupoProduto", "Cadastro")',
+                url = '@Url.Action("ExcluirProduto", "Cadastro")',
                 param = { 'id': id };
             bootbox.confirm({
                 message: "Realmente deseja excluir o grupo de produto?",
@@ -183,7 +183,7 @@
         })
         .on('click', '#btn_confirmar', function () {
             var btn = $(this),
-                url = '@Url.Action("SalvarGrupoProduto", "Cadastro")',
+                url = '@Url.Action("SalvarProduto", "Cadastro")',
                 param = {
                     Id: $('#id_cadastro').val(),
                     Nome: $('#txt_nome').val(),
